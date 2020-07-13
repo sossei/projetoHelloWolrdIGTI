@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProjetoHelloWorld</string>
+    <string name="am_01">Chamar Próxima Tela</string>
 </resources>
