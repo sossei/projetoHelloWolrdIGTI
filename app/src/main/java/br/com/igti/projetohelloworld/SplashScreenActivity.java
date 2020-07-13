@@ -23,6 +23,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             openDelayed();
             SharedPreferences.Editor editor = pref.edit();
             editor.putBoolean("key_firsttime",false);
+            editor.apply();
         }else{
             openActvity();
         }
