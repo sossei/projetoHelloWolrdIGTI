@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Escuro.ProjetoHelloWorld</string>
+    <string name="am_01">Chamar Próxima Tela</string>
+</resources>
