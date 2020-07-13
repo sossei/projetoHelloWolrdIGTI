@@ -23,7 +23,7 @@ public class Tela2Activity extends AppCompatActivity {
     BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if(Objects.equals(intent.getAction(), Intent.ACTION_BATTERY_CHANGED)){
+            if(Objects.equals(intent.getAction(), android.content.Intent.ACTION_BATTERY_LOW)){
                 Toast.makeText(getApplicationContext(), "Atenção!!! Bateria Fraca", Toast.LENGTH_SHORT).show();
             }
         }
@@ -37,7 +37,7 @@ public class Tela2Activity extends AppCompatActivity {
     }
 
     private void configurandoBoradcastReceiver() {
-        IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+        IntentFilter filter = new IntentFilter(android.content.Intent.ACTION_BATTERY_LOW);
         this.registerReceiver(broadcastReceiver, filter);
     }
 
